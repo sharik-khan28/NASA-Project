@@ -1,5 +1,5 @@
 name: NASA PROJECT CI
-on: [push, pull_requests]
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
