@@ -12,10 +12,10 @@ jobs:
       runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js version ${{ matrix.node-version }}
+    - name: Use Node.js version ${{ startegy.matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ strategy.matrix.node-version }}
     - name: Use MongoDB from GitHub actions
       uses: supercharge/mongodb-github-action@1.6.0
       with:
