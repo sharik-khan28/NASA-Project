@@ -9,7 +9,7 @@ jobs:
     matrix:
       node-version: [15.x, 17.x]
       mongodb-version: ["4.4"]
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
   steps:
     - name: Use Node.js version ${{ matrix.node-version }}
       uses: actions/setup-node@v2
