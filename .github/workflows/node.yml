@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js version 17
-        uses: actions/set-upnode@v1
+        uses: actions/setu-pnode@v1
         with:
           node-version: "17"
       - run: npm install
