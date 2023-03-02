@@ -7,7 +7,6 @@ jobs:
     CI: true
     MONGO_URL: mongodb://localhost/nasa
   steps:
-    - uses: actions/checkout@v1
     - name: Use Node.js version '17'
       uses: actions/setup-node@v1
       with:
