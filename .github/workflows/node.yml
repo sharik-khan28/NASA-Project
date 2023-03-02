@@ -1,0 +1,16 @@
+name: NASA pROJECT CI
+on:
+  push:
+    branches: [main]
+  pull_request: [main]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js version 17
+        uses: actions/set-upnode@v1
+        with:
+          node-version: "17"
+      - run: npm install
+      - run: npm run build --prefix client
